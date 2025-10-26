@@ -1,9 +1,11 @@
 ---
 layout: default
-title: "[VWFA, attention] 멍 때리다가 글자가 자동으로 인식될 때" 
+title: "mind wandering" 
 permalink: /study/VMFA-DMN
 parent: study 
 ---
+
+# 멍 때리다가 글자가 자동으로 인식될 때 
 
 수업시간에 멍을 때리고 있다가 갑자기 글씨가 명확하게 인식이 되는 순간이 있다. 
 
