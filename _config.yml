@@ -14,8 +14,9 @@ plugins:
 nav:
   - Home: index.md
   - deep-learning: docs/dl/index.md
+  - study: docs/study/index.md 
   - NLP: docs/nlp/index.md
-  - model-build: docs/eda/index.md
+  - model-build: docs/model-build/index.md
 
 include:
   - docs
