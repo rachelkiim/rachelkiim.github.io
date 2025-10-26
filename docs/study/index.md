@@ -1,9 +1,9 @@
 ---
-title: data-analyze
+title: study
 nav_order: 2
 ---
 
-# Data Analyze 
+# Study 
 
 {: .no_toc }
 
