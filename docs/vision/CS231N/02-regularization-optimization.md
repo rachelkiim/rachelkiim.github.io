@@ -10,8 +10,8 @@ grand_parent: vision
 
 # 2. Regularization and Optimization
 
-https://cs231n.github.io/optimization-1/
-https://cs231n.github.io/optimization-2/
+[cs231n - optimization 1](https://cs231n.github.io/optimization-1/)
+[cs231n - optimization 2](https://cs231n.github.io/optimization-2/)
 
 
 > [!summary] Summary 
@@ -20,6 +20,8 @@ https://cs231n.github.io/optimization-2/
 > - we have a loss function (softmax, full loss, ••• )
 > - finding the best W : optimize with Gradient Descent 
 
+
+---
 
 ### Regularization 
 $$
@@ -45,6 +47,8 @@ A. loss same (dot product) but L2 will prefer w2 (nonzero)
 Q. which one would L1 regularization prefer? 
 A. same (both sum to 1). 
 
+
+---
 
 ### Optimization
 #### 1. Random search 
@@ -97,6 +101,8 @@ def eval_numerical_gradient(f, x):
 - numerical gradient : approximate, slow, easy to write 
 - analytic gradient : exact, fast, error-prone
 - in practice: always use analytic gradient, but check implementation with numerical gradient (gradient check)
+
+---
 
 ### Gradient Descent 
 

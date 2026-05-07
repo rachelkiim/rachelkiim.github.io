@@ -10,8 +10,8 @@ grand_parent: vision
 
 # 1. Image Classification with linear classifiers
 
-https://cs231n.github.io/classification/
-https://cs231n.github.io/linear-classify/
+[cs231n - image classification](https://cs231n.github.io/classification/)
+[cs231n - linear classify](https://cs231n.github.io/linear-classify/)
 
 
 > [!summary] Summary 
@@ -39,6 +39,8 @@ https://cs231n.github.io/linear-classify/
 2. use ML algorithms to train a classifier
 3. evaluate the classifier on new images 
 
+
+---
 
 ### Nearest Neighbor Classifier
 ```python
@@ -89,6 +91,8 @@ A. Train O(1), predict O(N)
 - not really good ,, 
 - we want classifier that are fast at prediction, slow for training is ok 
 
+---
+
 ### K-Nearest Neighbor Classifier 
 find the top-k closest images, and have them vote on the label of the test image 
 - k = 1 : same as Nearest Neighbor classifier
@@ -96,7 +100,9 @@ find the top-k closest images, and have them vote on the label of the test image
 
 #### Distance Metric
 - same distance from zero-point to the line (square or circle)
-http://vision.stanford.edu/teaching/cs231n-demos/knn/ demo for knn 
+[knn demo](http://vision.stanford.edu/teaching/cs231n-demos/knn/)
+
+---
 
 ### Hyperparameters 
 hyperparameters
@@ -113,6 +119,8 @@ hyperparameters
 - IDEA 3 : split data into train / val - **choose hyperparams on val and evaluate on test** 
 - IDEA 4 : cross-validation : split data into folds, try each fold as val and average the results 
 
+
+---
 
 ### Line Classifier
 #### parametric approach 

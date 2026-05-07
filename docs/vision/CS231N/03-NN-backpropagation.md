@@ -66,11 +66,13 @@ for t in range(2000):
 	w2 -= 1e-4 * grad_w2
 ```
 
-https://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html demo 
+[convnetjs demo](https://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html)
 - larger NN can represent more complicated function
 - but do not use size of NN as a regularizer. 
 - use stronger regularization instead ex. hyperparameter
 
+
+---
 
 ### Neuron 
 Biological Neurons
@@ -80,6 +82,8 @@ Biological Neurons
 neurons in a NN = organized into regular layers for computational efficiency 
 - but NN with random connections can work too .. 
 
+
+---
 
 ### loss function and NN 
 

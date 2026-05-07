@@ -71,6 +71,8 @@ U-Net Architecture
 - skip connection (copy feature maps from the encoder to the corresponding decoder layers)
 
 
+---
+
 ### object detection 
 #### single object
 - goal : predict both the class label & bounding box coordinates ($x, y$, width, height) for each object 

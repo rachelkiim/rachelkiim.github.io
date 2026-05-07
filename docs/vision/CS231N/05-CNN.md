@@ -44,6 +44,8 @@ at test time - all neurons are active always
 - we must scale the activations so that for each neuron → output at test time = expected output at training time
 - train때 일부 뉴런을 끄기 때문에 test 때는 전체를 쓰되 값을 줄여서 평균을 맞춰줘야 한다는 것
 
+---
+
 ### Activation Functions
 
 $$
@@ -63,6 +65,8 @@ $$ ReLU : f(x) = max(0, x) $$
 - converges much faster than sigmoid
 - problem: not zero-centered output & Dead ReLUs when $x<0$
 
+---
+
 ### VGGNet
 
 - smaller filters, deeper networks
@@ -71,6 +75,8 @@ $$ ReLU : f(x) = max(0, x) $$
 - What is the ERF of three 3x3 conv (stride 1) layers?
     - A3 (1x1) <- A2 (3x3) <- A1 (5x5) <- input (7x7) 
 	
+
+---
 
 ### ResNet
 
@@ -84,6 +90,8 @@ $$ ReLU : f(x) = max(0, x) $$
     - stack residual blocks
     - every residual blocks - two 3x3 conv layers
     - double # of filters has stride 2
+
+---
 
 ### Weight Initialization
 
@@ -103,6 +111,8 @@ for Din, Dout in zip(dims[:-1], dims[1:]):
 
 ## How to train CNNs
 
+---
+
 ### Data preprocessing
 
 TLDR for image normalization
@@ -111,11 +121,15 @@ TLDR for image normalization
 - divide by per-channel std
 - requires pre-computing means and std for each pixel channel
 
+---
+
 ### Data augmentation
 
 load image and label → cat → compute loss
 
 - horizonal flips, random crops and scales
+
+---
 
 ### Transfer learning
 
@@ -124,6 +138,8 @@ if we don't have a lot of data .. → 이미 배운 모델을 가져와서 새�
 1. ImageNet으로 pretraining
 2. Small Dataset (C classes)로 training
 3. Bigger Dataset으로 training
+
+---
 
 ### choosing hyperparameters
 

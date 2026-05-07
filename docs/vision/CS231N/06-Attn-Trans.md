@@ -43,7 +43,7 @@ communication bottleneck
 #### solution 
 → let's look back at the entire input sequence at each step of generating the output 
 
-
+---
 
 ### Attention 
 
@@ -80,6 +80,8 @@ insights into which parts of the input sequence the model focuses on when genera
 - interpretability : introspection into the model's processing - revealing what it 'looks at' during task execution 
 - visualization method : attn weights can be **visualized as a 2D grid** (probability distribution over the input sequence for each output word)
 
+
+---
 
 ### Attention as a Computational Primitive
 
@@ -129,6 +131,8 @@ Multihead Self-Attn
 
 
 
+---
+
 ### Comparison 
 
 #### RNN 
@@ -150,6 +154,8 @@ Multihead Self-Attn
 	- computationally expensive - more GPUs needed 
 
 
+
+---
 
 ### Transformer 
 self-attn layer - residual connection - layer normalization - Feedforward Network / Multi-layer perceptron (MLP)

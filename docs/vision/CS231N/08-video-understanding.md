@@ -20,6 +20,8 @@ grand_parent: vision
 - **Computational Constraints**: High-definition videos are too large for GPU memory (e.g., 10GB per minute). The solution is to process short **clips** (e.g., 16–32 frames) using a sliding window approach.
     
 
+---
+
 ### Basic Fusion Strategies
 
 - **Single Frame Baseline**: A simple but strong baseline where a 2D CNN is run on individual frames and their predictions are averaged.
@@ -31,6 +33,8 @@ grand_parent: vision
 - **Slow Fusion (3D CNN)**: Balanced approach that gradually fuses spatial and temporal information throughout the network layers.
     
 
+---
+
 ### 3D Convolutional Architectures
 
 - **3D Convolution Operation**: Uses a 3D kernel that slides across both spatial (H,W) and temporal (T) dimensions, allowing for temporal shift invariance.
@@ -39,6 +43,8 @@ grand_parent: vision
     
 - **I3D (Inflated 3D ConvNet)**: Architecture that "inflates" 2D filters from successful image models (like Inception) into 3D filters, allowing the reuse of ImageNet pre-trained weights.
     
+
+---
 
 ### Motion & Two-Stream Networks
 
@@ -49,6 +55,8 @@ grand_parent: vision
 - **Motion Importance**: Surprisingly, the motion stream often performs better than the appearance stream for many action categories.
     
 
+---
+
 ### Long-Term Modeling & Attention
 
 - **RNNs & LSTMs**: Used to aggregate features from 2D or 3D CNNs over longer sequences to capture extended temporal structures.
@@ -57,6 +65,8 @@ grand_parent: vision
     
 - **Video Transformers**: Modern approach using patches and attention (e.g., Video MAE) to achieve state-of-the-art results in action classification.
     
+
+---
 
 ### Multimodal & Future Directions
 
