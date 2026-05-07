@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "07 GPU with Pytorch "
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-07/
 subtitle: Dl and MLP 
 use_math : true

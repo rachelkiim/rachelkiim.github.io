@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "08 Overfitting and Hyperparameter "
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-08/
 subtitle: Dl and MLP 
 use_math : true

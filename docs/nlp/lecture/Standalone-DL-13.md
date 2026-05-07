@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "13 CNN with Pytorch"
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-13/
 use_math : true
 ---

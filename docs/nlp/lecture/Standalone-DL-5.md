@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "05 DL and MLP Basic "
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-05/
 use_math : true
 ---

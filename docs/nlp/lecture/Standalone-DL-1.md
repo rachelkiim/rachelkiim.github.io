@@ -4,7 +4,8 @@ title: "01 ML Basic"
 permalink: /dl/sa/standalone-01/
 subtitle: ML Basic 
 use_math : true
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 ---
 
 # [Standalone DL] 01 - #2 ML Basic

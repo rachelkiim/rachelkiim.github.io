@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "04 Binary / Multi-Label Classification and Lab"
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-04/
 subtitle: Multi-label 
 use_math : true

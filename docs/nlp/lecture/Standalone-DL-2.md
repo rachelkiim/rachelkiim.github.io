@@ -4,7 +4,8 @@ title: "02 Linear Regression and Lab"
 permalink: /dl/sa/standalone-02/
 subtitle: Linear Regression 
 use_math : true
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 ---
 
 # [Standalone DL] 02 - #3 Linear Regression and Practice 

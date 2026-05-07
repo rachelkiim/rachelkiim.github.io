@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "12 Basic of CNN"
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-12/
 use_math : true
 ---

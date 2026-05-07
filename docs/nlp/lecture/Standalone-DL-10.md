@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "10 Advanced Optimizer"
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-10/
 use_math : true
 ---

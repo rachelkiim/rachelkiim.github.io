@@ -4,7 +4,8 @@ title: "03 Pytorch Regression"
 permalink: /dl/sa/standalone-03/
 subtitle: Pytorch Regression 
 use_math : true
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 ---
 
 # [Standalone DL] 03 - #5 Regression with Pytorch

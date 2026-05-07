@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "06 Parameterize "
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-06/
 subtitle: Dl and MLP 
 use_math : true

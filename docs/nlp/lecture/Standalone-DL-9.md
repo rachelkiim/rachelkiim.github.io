@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "09 Well-Organized DL Code "
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-09/
 subtitle: Dl and MLP 
 use_math : true

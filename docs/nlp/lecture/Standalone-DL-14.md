@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "14 Basic of RNN"
-parent: deep-learning
+parent: lecture
+grand_parent: nlp
 permalink: /dl/sa/standalone-14/
 use_math : true
 ---
