@@ -1,0 +1,63 @@
+---
+layout: default
+title: "09 Distributed Training"
+permalink: /vision/CS231N/
+#subtitle: 
+use_math: true
+parent: CS231N
+grand_parent: vision
+---
+
+# 9. Large Scale Distributed Training
+
+### Hardware & GPU Clusters
+
+- **GPU Internals (NVIDIA H100)**: The core of modern training is the GPU, which contains Streaming Multiprocessors (SMs) and specialized **Tensor Cores**. Tensor Cores are hardware units designed specifically for matrix multiplication, providing a massive speedup over standard FP32 cores
+    
+- **Memory Hierarchy**: Data moves through a hierarchy where speed increases as capacity decreases: HBM (High Bandwidth Memory, 80GB) → L2 Cache (50MB) → L1 Cache/Registers. Efficient kernels minimize data movement from HBM to keep the cores busy
+    
+- **Cluster Topology**: Hardware is organized into levels
+    - **Server**: 8 GPUs connected via high-speed NVLink.
+    - **Pod**: A group of racks (e.g. 3,072 GPUs).
+    - **Cluster**: Multiple pods connected (e.g. Llama 3 used 24,576 GPUs)
+    - **Constraint**: Communication bandwidth drops significantly as you move from intra-server to inter-pod levels, influencing how we parallelize models
+        
+
+### The Five Degrees of Parallelism
+
+To train models that are too large for a single GPU, computation is split across four dimensions of a Transformer tensor (Batch, Sequence, Layer, Hidden Dimension).
+
+- **Data Parallelism (DP & FSDP)**:
+    
+    - **Standard DP**: Each GPU has a full model copy but processes different data. This hits a memory limit as models grow.
+    - **Fully Sharded Data Parallelism (FSDP)**: Shards model weights, gradients, and optimizer states across all GPUs. Weights are only "gathered" via communication right before they are needed for a layer's computation and then discarded.
+        
+- **Pipeline Parallelism (PP)**: Layers are split across GPUs. To avoid the "pipeline bubble" (idle GPUs waiting for data), multiple micro-batches are processed simultaneously in a staggered fashion.
+    
+- **Tensor Parallelism (TP)**: Splits individual weight matrices within a layer. For example, a large matrix multiply is divided so each GPU computes a portion of the output. This requires very high-speed interconnects (intra-server).
+    
+- **Context Parallelism (CP)**: Splits the sequence (token) dimension. This is critical for training models with massive context windows (e.g., 128k tokens), where a single sequence is too long for one GPU's memory.
+    
+
+### Efficiency & Optimization Tricks
+
+- **Activation Checkpointing**
+	- Instead of storing every intermediate activation for the backward pass (which consumes massive memory), the model discards most activations and recomputes them when needed during the backward pass
+	- This trades 33% more computation for significantly less memory usage
+	    
+- **Mixed Precision**
+	- Tensor cores use 16-bit (FP16 or BF16) for multiplications and 32-bit (FP32) for accumulations
+	- This speeds up training and reduces memory without sacrificing accuracy
+	    
+- **Model FLOPs Utilization (MFU)**: 
+    - This is the primary metric for training efficiency
+    - It measures what percentage of a GPU's theoretical peak performance is actually used for useful work
+        - 30%–40% MFU is considered as SOTA for large clusters
+        - Lower MFU usually indicates communication bottlenecks or small batch sizes.
+            
+
+### Scaling Recipe Summary
+
+- **Small Models (<1B parameters)**: Use standard Data Parallelism
+- **Medium Models (1B–10B)**: Switch to FSDP and add Activation Checkpointing
+- **Large Models (10B–400B+)**: Use "ND-Parallelism" (a combination of FSDP, TP, PP, and CP). For example, Llama 3 405B utilized 8-way TP, 16-way PP, and 8-way DP simultaneously
