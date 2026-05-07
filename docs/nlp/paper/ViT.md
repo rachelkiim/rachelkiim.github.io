@@ -4,7 +4,8 @@ title: "09 ViT"
 permalink: /nlp/ViT/
 subtitle: Transformer in Image Recognition 
 use_math : true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 
 # [ViT] An Image is Worth 16x16 Words : Transformers for Image Recognition at Scale (2021)

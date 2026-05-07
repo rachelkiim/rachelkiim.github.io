@@ -4,7 +4,8 @@ title: "Batch API"
 permalink: /nlp/batchapi/
 subtitle: effective way for generating lang-data 
 use_math: true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 
 # Batch API와 일반 API 이용하기 

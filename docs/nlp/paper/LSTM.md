@@ -4,7 +4,8 @@ title: "03 LSTM"
 subtitle: cell state, gate 구조를 통해 장기 의존성을 학습하는 LSTM
 permalink: /nlp/lstm/
 use_math : true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 
 # [LSTM] Long Short Term Memory Recurrent Neural Network Architectures for Large Scale Acoustic Modeling (2014) 

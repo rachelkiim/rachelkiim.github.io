@@ -4,7 +4,8 @@ title: "01 RNN"
 subtitle: 이전 출력을 현재 입력으로 사용하는 순환 구조, RNN 
 permalink: /nlp/rnn/
 use_math : true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 
 # [RNN] Recurrent neural network based language model (2010)

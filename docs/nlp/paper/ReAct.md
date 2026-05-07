@@ -4,7 +4,8 @@ title: "08 ReAct"
 permalink: /nlp/react/
 subtitle: 추론과 생각의 시너지를 보는 프롬프팅 기반 ReAct
 use_math : true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 
 # [ReAct] Synergizing Reasoning and Acting in Language Models

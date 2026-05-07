@@ -4,7 +4,8 @@ title: "07 GPT-1"
 permalink: /nlp/gpt1/
 subtitle: using unlabeled data 
 use_math : true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 
 # [GPT-1] Improving Language Understanding by Generative Pre-Training(2018)

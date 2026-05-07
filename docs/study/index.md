@@ -3,7 +3,7 @@ title: study
 nav_order: 2
 ---
 
-# Study 
+# Study  
 
 {: .no_toc }
 

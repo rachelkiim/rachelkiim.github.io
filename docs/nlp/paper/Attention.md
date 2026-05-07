@@ -4,7 +4,8 @@ title: "05 Attention"
 permalink: /nlp/attention/
 subtitle: 입력 각 부분이 출력에 얼마나 중요한지 계산하여 '집중'할 수 있도록 하는 Attention
 use_math: true
-parent: nlp
+parent: paper
+grand_parent: nlp
 ---
 # [Attention] Neural Machine Translation by Jointly Learning to Align and Translate (2015)
 
