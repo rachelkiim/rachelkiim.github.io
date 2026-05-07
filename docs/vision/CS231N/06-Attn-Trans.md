@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "06 Attention and Transformers"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/06
 #subtitle: 
 use_math: true
 parent: CS231N

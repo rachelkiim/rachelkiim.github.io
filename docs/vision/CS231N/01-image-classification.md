@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "01 Image Classification with linear classifiers"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/01
 #subtitle: 
 use_math: true
 parent: CS231N

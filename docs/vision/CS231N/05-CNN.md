@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "05 CNN Architecture"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/05
 #subtitle: 
 use_math: true
 parent: CS231N

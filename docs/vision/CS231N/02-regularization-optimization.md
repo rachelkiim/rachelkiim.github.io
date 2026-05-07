@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "02 Regularization and Optimization"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/02
 #subtitle: 
 use_math: true
 parent: CS231N

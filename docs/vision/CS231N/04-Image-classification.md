@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "04 Image Classification"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/04
 #subtitle: 
 use_math: true
 parent: CS231N

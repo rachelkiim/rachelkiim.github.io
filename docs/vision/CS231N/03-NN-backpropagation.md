@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "03 Neural Networks and Backpropagation"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/03
 #subtitle: 
 use_math: true
 parent: CS231N

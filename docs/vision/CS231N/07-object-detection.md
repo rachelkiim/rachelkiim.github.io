@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "07 Detection and Segmentation"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/07
 #subtitle: 
 use_math: true
 parent: CS231N

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "08 Video Understanding"
-permalink: /vision/CS231N/
+permalink: /vision/CS231N/08
 #subtitle: 
 use_math: true
 parent: CS231N
